@@ -6,17 +6,23 @@
 </head>
 <body>
 <script>
-    let x = prompt('nhập một số ')
-    let a = [-3, 5, 8, 18, 0, 6, 71, 24];
-    for(let i=0; i<a.length; i++){
-        if (x == a[i]){
-            document.write(x + ' là số nằm trong mảng')
-            break;
-        }if (x != a[i]){
-            document.write(x + ' là số không nằm trong mảng')
-            break;
+    function tim(so) {
+        let a = [-3, 5, 8, 18, 0, 6, 71, 24, 2, 1];
+        let kq = ''
+        for (let i = 0; i <= a.length; i++) {
+            if (so == a[i]) {
+                document.getElementById('xuat').innerHTML = kq + ' là số nằm trong mảng'
+                break;
+            }
+            if (so !== a[i]) {
+                document.getElementById('xuat').innerHTML = kq + ' là số không nằm trong mảng'
+            }
         }
     }
 </script>
+<h1>Ứng dụng cho phép tra cứu xem số có nằm trong mảng hay ko.</h1>
+<input id="so" type="text"/>
+<button type="button" onclick="tim(so.value)">Dịch</button>
+<div style="color: blue" id="xuat"></div>
 </body>
 </html>
