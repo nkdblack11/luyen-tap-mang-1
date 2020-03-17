@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7</title>
+</head>
+<body>
+<script>
+    let v = parseInt(prompt('nhập số'))
+    let a = [-3, 5, 8, 18, 0, 6, 71, 24, 2, 1];
+    let kq = ''
+    for (let i = 0; i <= a.length; i++) {
+        if (v == a[i]) {
+            a.splice(i,1)
+            a.push(0)
+            kq = i
+            console.log(a)
+            break;
+        }
+    }
+</script>
+</body>
+</html>
