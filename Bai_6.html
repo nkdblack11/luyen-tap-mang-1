@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = prompt('nhập một số ')
+    let a = [-3, 5, 8, 18, 0, 6, 71, 24];
+    for(let i=0; i<a.length; i++){
+        if (x == a[i]){
+            document.write(x + ' là số nằm trong mảng')
+            break;
+        }if (x != a[i]){
+            document.write(x + ' là số không nằm trong mảng')
+            break;
+        }
+    }
+</script>
+</body>
+</html>
