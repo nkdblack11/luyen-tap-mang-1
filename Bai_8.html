@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+<script language="JavaScript">
+    let a = [-3, 5, 8, 18, 0, 6, 71, 24, 2, 1];
+    let n = a.length;
+    for (let i=0; i<n-1; i++){
+        for (let j=0; j<n-i-1; j++){
+         if (a[j] < a[j+1]){
+                let kq = a[j];
+             a[j] = a[j +1];
+             a[j + 1] = kq
+         }
+        }
+    }
+    document.write(a)
+</script>
+</body>
+</html>
